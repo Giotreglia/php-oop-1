@@ -39,14 +39,4 @@ class Movie {
             </div>
         </div>';
     }
-
-    public function getGenres() {
-        $generi = '';
-
-        foreach ($genres as $genre) {
-            $generi .= $genres->genre1 . ', ' . $genres->genre2 . ', ' . $genres->genre3 . '<br>';
-        }
-
-        return $generi;
-    }
 }
