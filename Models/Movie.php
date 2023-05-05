@@ -30,12 +30,12 @@ class Movie {
     public function getFullMovieDescription($movie) {
         return 
         '<div class="card" style="width: 18rem; height: 800px">
-            <img src="<?php echo' . $movie . '->image ?>" class="card-img-top ms-img" alt="<?php echo' . $movie .'->title ?>">
+            <img src="' . $movie->image . '" class="card-img-top ms-img" alt="' . $movie->title . '">
             <div class="card-body">
-                <h2><?php echo' . $movie . '->title ?></h2>
-                <h4><?php echo' . $movie . '->director ?></h4>
-                <h5><?php echo' . $movie .'->genre ?></h5>
-                <p class="card-text"><?php echo' . $movie . '->plot ?></p>
+                <h2>' . $movie->title . '</h2>
+                <h4>' . $movie->director . '</h4>
+                <h5>' . $movie->genres->genre1 . '/' . $movie->genres->genre2 . '/' . $movie->genres->genre3 . '</h5>
+                <p class="card-text">' . $movie->plot . '</p>
             </div>
         </div>';
     }
